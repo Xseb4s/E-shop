@@ -1,0 +1,60 @@
+.container{
+    
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+
+    .card-container{
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px,1fr) );
+      gap: 32px;
+
+      .card{
+        display: flex;
+        justify-content: center;
+        
+        border-radius: 15px;
+        
+        background-color: black;
+
+        .card-content{
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          align-items: center;
+          text-align: center;
+          box-sizing: content-box;
+          padding: 10px;
+          gap: 6px;
+          
+          & img{
+            border-radius: 10px;
+          }
+          & strong{
+            font-size: 12px;
+          }
+          .shopping-cart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 60px;
+            height: 30px;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.171);
+            transition: 0.3s;
+
+            &:hover{
+              transform: scale(1.20);
+              cursor: pointer;
+            }
+          }
+        }
+      }
+    }
+    
+
+}
